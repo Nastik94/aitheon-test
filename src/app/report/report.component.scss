@@ -1,0 +1,20 @@
+:host {
+  height: 100%;
+}
+.report {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__block {}
+  &__user {
+    margin-bottom: 10px;
+  }
+  &__table {
+    min-width: 500px;
+    text-align: left;
+    td {
+      border-bottom: 1px solid #eee;
+    }
+  }
+}

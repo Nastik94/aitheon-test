@@ -8,10 +8,12 @@ import {TimerService} from '../services/timer.service';
 })
 export class ReportComponent implements OnInit {
 
-  constructor(private timerService: TimerService) { }
+  constructor(public timerService: TimerService) { }
 
   ngOnInit() {
     console.log(this.timerService.userTimer);
   }
-
+  sum() {
+    return this.timerService.userTimer.timers.reduce(function (x, item) { return x + item.time; }, 0);
+  }
 }

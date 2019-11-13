@@ -1,0 +1,17 @@
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  .links {
+    a {
+      width: 15%;
+      padding: 10px;
+      color: #aaa;
+    }
+    a.active {
+      font-weight: bold;
+      color: #000;
+    }
+  }
+  button {}
+}

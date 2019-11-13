@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  min-height: 100vh;
+  height: auto;
+  margin: 0;
+  overflow: auto;
+  font-size: 16px;
+}
+app-root {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.button-ai {
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: #fff;
+  background: #164950;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button-ai:hover {
+  background: #12333a;
+}

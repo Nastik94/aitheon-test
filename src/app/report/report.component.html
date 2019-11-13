@@ -1,3 +1,23 @@
-<p>
-  report works!
-</p>
+<div class="report">
+  <div class="report__block">
+    <div class="report__user">Report {{timerService.userTimer.name}}</div>
+    <table class="report__table">
+      <thead>
+      <tr>
+        <th>Page</th>
+        <th>Total</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let time of timerService.userTimer.timers; index as i">
+        <td>Page {{i}}</td>
+        <td>{{time.time | time}}</td>
+      </tr>
+      <tr>
+        <td>TOTAL</td>
+        <td>{{sum() | time}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

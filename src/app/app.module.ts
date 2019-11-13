@@ -10,6 +10,7 @@ import { Page3Component } from './page3/page3.component';
 import { ReportComponent } from './report/report.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {TimerService} from './services/timer.service';
+import { TimePipe } from './services/time.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {TimerService} from './services/timer.service';
     Page1Component,
     Page2Component,
     Page3Component,
-    ReportComponent
+    ReportComponent,
+    TimePipe
   ],
   imports: [
     BrowserModule,
